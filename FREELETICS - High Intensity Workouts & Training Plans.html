@@ -26,72 +26,16 @@
 
 
   <style type="text/css"></style><style type="text/css"></style></head>
-  <body data-dom-status="ready" lang="en" ng-class="{&#39;landing-page&#39;: onLandingPage(), &#39;mobile-nav&#39;: $root.isMobileNavMenuVisible}" class="landing-page">
-      <span ng-class="activeAlert ? [&#39;alert&#39;, &#39;active&#39;, activeAlert.type].join(&#39; &#39;) : &#39;alert&#39;" fl-alerts="" class="ng-binding alert">
+  <body lang="en">
   
-  <span class="count ng-binding ng-hide" ng-show="alerts.length &gt; 0">
-    1
-  </span>
-  <span class="dismiss" ng-click="dismiss()">
-    ×
-  </span>
-</span>
+ 
 
-      <header class="l-header">
-        <!-- ngInclude: '/views/partials/_header/topbar.html' --><div id="topbar" ng-include="&#39;/views/partials/_header/topbar.html&#39;" class="ng-scope">
-<div ng-controller="UserCtrl" class="l-topbar ng-scope">
-  <div ng-hide="user" class=""><a ng-href="/en" ng-controller="SignInModalCtrl" ng-click="!user &amp;&amp; openSignInModal()" class="logo ng-scope" href="./FREELETICS - High Intensity Workouts & Training Plans_files/FREELETICS - High Intensity Workouts & Training Plans.html">
-      <div class="freeletics-logo"><span>Freeletics</span></div></a>
-    <nav class="user-session">
-      <ul class="authentication">
-        <li class="sign-up-button">
-          <button ng-controller="SignUpModalCtrl" ng-click="openSignUpModal()" class="blue ng-scope ng-binding">Start your workout now</button>
-        </li>
-        <li class="sign-in-button">
-        </li>
-        <li fl-language-switch="fl-language-switch" class="ng-isolate-scope">
-<div class="language-switch-desktop">
-
+<div style="position:relative; width: 100%; height: 100%;">
+<div class="" style="background-image: url('drawing.png'); width: 600px; height: 166px; background-size:100% auto; position: absolute; margin 100px: auto; top: 50%; bottom: 50%; margin-top:-180px; left:50%; margin-left:-300px;"></div>
+<video class="video" autoplay="" loop=""><source src="http://player.vimeo.com/external/94589466.hd.mp4?s=bbc373edbe00136ab7c372b8847dd904" type="video/mp4"></video>
 </div>
-<div class="language-switch-mobile">
-  <select ng-model="locales.current" ng-options="locale.symbol for locale in locales.available" class="language-switch-button ng-pristine ng-valid"><option value="0" selected="selected">en</option><option value="1">es</option><option value="2">de</option><option value="3">pt</option><option value="4">fr</option></select><i class="fa fa-sort-desc"></i>
-</div></li>
-      </ul>
-    </nav>
-  </div>
-  <div ng-show="user" class="ng-hide"><a ng-href="/en" ng-controller="SignInModalCtrl" ng-click="!user &amp;&amp; openSignInModal()" class="logo logo-desktop ng-scope" href="./FREELETICS - High Intensity Workouts & Training Plans_files/FREELETICS - High Intensity Workouts & Training Plans.html">
-      <div class="freeletics-logo"></div></a><a href="" ng-click="showMobileNavMenu($event)" class="logo logo-mobile"><i class="fa fa-navicon"></i>
-      <div class="freeletics-logo"></div></a>
-    <nav class="user-session"><a ng-href="/en/workouts/" ng-show="suggestion.type==&#39;workout&#39;" ng-controller="UserPreviewCtrl" class="link-button link-button-mobile blue ng-scope ng-binding ng-hide" href="https://www.freeletics.com/en/workouts/">Do Workout</a><a ng-href="/en/get_coach" fl-smooth-scroll-to="#now" ng-show="suggestion.type==&#39;buy&#39;||suggestion.type==&#39;discount&#39;" ng-controller="UserPreviewCtrl" class="link-button link-button-mobile blue ng-scope ng-binding ng-hide" href="https://www.freeletics.com/en/get_coach">Get Coach</a>
-      <div class="current-user"><span class="welcome ng-binding">Welcome</span><a ng-href="/en/account" class="user-name ng-binding" href="https://www.freeletics.com/en/account"> </a><a href="" ng-controller="SignOutCtrl" ng-click="signOut()" class="sign-out ng-scope ng-binding">Sign Out</a></div>
-    </nav>
-  </div>
-</div></div>
-        <!-- ngInclude: '/views/partials/_header/user.html' --><div ng-include="&#39;/views/partials/_header/user.html&#39;" class="ng-scope">
-<div ng-controller="UserPreviewCtrl" class="blackback ng-scope">
-  <div ng-show="showUserPreview" class="container_12 user_header ng-hide">
-    <div class="grid_2"><a ng-href="/en/account" class="avatar-medium" href="https://www.freeletics.com/en/account"><img ng-src=""></a></div>
-    <div class="grid_5">
-      <h2 class="user_name ng-binding"> </h2><span class="user_location ng-binding">-</span>
-      <ul class="user_status">
-        <li class="horizontal_bar"><span class="horizontal_bar-background"><span class="horizontal_bar-width-fix"><span style="width: null%" class="horizontal_bar-indicator"></span></span></span><em class="horizontal_bar-left_description"><span class="ng-binding">Level </span><span class="grey ng-binding">( points)</span></em><em class="horizontal_bar-right_description"><span class="grey ng-binding"> Points to</span><span class="ng-binding">Level 1</span></em></li>
-        <li ng-show="coachSubscription" class="horizontal_bar ng-hide"><span class="horizontal_bar-background"><span class="horizontal_bar-width-fix"><span style="width: null%" class="horizontal_bar-indicator"></span></span></span><em class="horizontal_bar-left_description ng-binding">Week </em><em class="horizontal_bar-right_description"><span class="grey ng-binding">0 Weeks left to</span><span class="ng-binding">Week </span></em></li>
-      </ul>
-    </div>
-    <div ng-show="showSuggestion" class="grid_5 next_session ng-hide">
-      <div ng-show="suggestion.type==&#39;discount&#39;" ng-bind-html="suggestion.discount" class="ng-binding ng-hide"></div>
-      <h1 ng-hide="suggestion.type==&#39;discount&#39;" class="white ng-binding"></h1><a ng-href="/en/workouts/" ng-show="suggestion.type==&#39;workout&#39;" class="link-button blue ng-binding ng-hide" href="https://www.freeletics.com/en/workouts/">Do Workout</a><a ng-href="/en/get_coach" fl-smooth-scroll-to="#now" ng-show="suggestion.type==&#39;buy&#39;||suggestion.type==&#39;discount&#39;" class="link-button blue ng-binding ng-hide" href="https://www.freeletics.com/en/get_coach">Get Coach</a>
-    </div>
-  </div>
-  <!-- ngIf: showEditUserPicture -->
-</div></div>
-        <!-- ngInclude: '/views/partials/_header/nav.html' --><nav ng-include="&#39;/views/partials/_header/nav.html&#39;" class="ng-scope">
-<div ng-controller="NavigationCtrl" class="ng-scope">
-  <!-- ngIf: show -->
-</div></nav>
-      </header>
 
-      <!-- ngView:  --><div class="l-content ng-scope" ng-view="">
+ <!--     <!-- ngView:  --><div class="l-content ng-scope" ng-view="">
 <div class="landing-page-content ng-scope">
   <div class="blackback">
     <section fl-stretch="fl-stretch" class="stage" style="height: 522px;">
@@ -253,13 +197,9 @@
       <div class="l-overlay" ng-click="$root.isMobileNavMenuVisible = false"></div>
 
       <!-- ngInclude: '/views/partials/_footer/footer.html' --><footer class="l-footer ng-scope" ng-include="&#39;/views/partials/_footer/footer.html&#39;">
-</footer>
+</footer>-->
 
 
 
-
-   
-
-      <noscript>&lt;div class="container_12"&gt;Freeletics.com makes heavy use of JavaScript. Please activate JavaScript in your browser settings.&lt;/div&gt;</noscript>
   
 </body></html>
