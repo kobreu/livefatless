@@ -62,14 +62,10 @@
           <button ng-controller="SignUpModalCtrl" ng-click="openSignUpModal()" class="blue ng-scope ng-binding">Start your workout now</button>
         </li>
         <li class="sign-in-button">
-          <button ng-controller="SignInModalCtrl" ng-click="openSignInModal()" class="dark ng-scope ng-binding">Sign In</button>
         </li>
         <li fl-language-switch="fl-language-switch" class="ng-isolate-scope">
 <div class="language-switch-desktop">
-  <button type="button" class="language-switch-button"><span class="ng-binding">en</span><i class="fa fa-sort-desc"></i></button>
-  <ul class="language-switch-list">
-    <!-- ngRepeat: locale in locales.switchable --><li ng-repeat="locale in locales.switchable" class="ng-scope"><a ng-href="/es" class="ng-binding" href="https://www.freeletics.com/es">Español</a></li><!-- end ngRepeat: locale in locales.switchable --><li ng-repeat="locale in locales.switchable" class="ng-scope"><a ng-href="/de" class="ng-binding" href="https://www.freeletics.com/de">Deutsch</a></li><!-- end ngRepeat: locale in locales.switchable --><li ng-repeat="locale in locales.switchable" class="ng-scope"><a ng-href="/pt" class="ng-binding" href="https://www.freeletics.com/pt">Português</a></li><!-- end ngRepeat: locale in locales.switchable --><li ng-repeat="locale in locales.switchable" class="ng-scope"><a ng-href="/fr" class="ng-binding" href="https://www.freeletics.com/fr">Français</a></li><!-- end ngRepeat: locale in locales.switchable -->
-  </ul>
+
 </div>
 <div class="language-switch-mobile">
   <select ng-model="locales.current" ng-options="locale.symbol for locale in locales.available" class="language-switch-button ng-pristine ng-valid"><option value="0" selected="selected">en</option><option value="1">es</option><option value="2">de</option><option value="3">pt</option><option value="4">fr</option></select><i class="fa fa-sort-desc"></i>
@@ -115,24 +111,25 @@
     <section fl-stretch="fl-stretch" class="stage" style="height: 522px;">
       <div class="hline"></div>
       <div class="stage-headlines">
-        <h1 translate="LANDING_PAGE_SLOGAN_1" class="ng-scope">The shape of your life. Period.</h1>
-        <h2 translate="LANDING_PAGE_SLOGAN_2" class="ng-scope">High intensity workouts. Training plans. Personalized to you.</h2>
-        <button ng-controller="SignUpModalCtrl" ng-click="openSignUpModal()" class="blue ng-scope"><span class="ng-binding">Start your workout now</span></button>
+        <h1 translate="LANDING_PAGE_SLOGAN_1" class="ng-scope">Der Drink deines Lebens. Endlich.</h1>
+        <h2 translate="LANDING_PAGE_SLOGAN_2" class="ng-scope">Energiereich. Fettreduzierend. Wohltuend.</h2>
+        <button ng-controller="SignUpModalCtrl" ng-click="openSignUpModal()" class="blue ng-scope"><span class="ng-binding">Bestell deinen Drink jetzt</span></button>
       </div><a fl-smooth-scroll-to=".featured" href="" fl-sticky=".l-topbar" class="button-scroll-down"><i class="fa fa-angle-down"></i></a>
     </section>
   </div>
   <section class="featured">
     <div class="container_12">
-      <div translate="LANDING_PAGE_FEATURED_IN" class="featured-in ng-scope">Featured in</div>
+      <div translate="LANDING_PAGE_FEATURED_IN" class="featured-in ng-scope">Vorgestellt in</div>
       <div class="featured-logos"><img src="./FREELETICS - High Intensity Workouts & Training Plans_files/featured_in.jpg"></div>
     </div>
   </section>
   <section class="freeletics-approach">
     <div class="container_12">
-      <h2 class="ng-binding">The Freeletics approach.</h2>
+      <h2 class="ng-binding">Du warst noch nie so fit.</h2>
       <div class="box">
         <div class="icon"><i class="icon-fl-high-intensity"></i></div>
-        <h3 translate="LANDING_PAGE_INTENSITY_WORKOUTS" class="ng-scope">High intensity workouts.</h3>
+        <h3 translate="LANDING_PAGE_INTENSITY_WORKOUTS" class="ng-scope">10-fache Fettreduktion während des Workouts
+        </h3>
         <p translate="LANDING_PAGE_YOU_AND_YOUR_PROGRESS" class="ng-scope">Freeletics workouts are tough and highly effective. They take between 15-45 min.</p>
         <div onclick="" class="hover">
           <div class="icon"><i class="icon-fl-high-intensity"></i></div>
@@ -141,7 +138,7 @@
       </div>
       <div class="box">
         <div class="icon"><i class="icon-fi-checklist"></i></div>
-        <h3 translate="LANDING_PAGE_PERSONAL_TRAINING" class="ng-scope">Personalized coaching.</h3>
+        <h3 translate="LANDING_PAGE_PERSONAL_TRAINING" class="ng-scope">Zellschützend und Isotonisch.</h3>
         <p translate="LANDING_PAGE_GUIDED_TRAINING" class="ng-scope">Training plans are personalized to your goals and progress. You can become a free athlete at every fitness level.</p>
         <div onclick="" class="hover">
           <div class="icon"><i class="icon-fi-checklist"></i></div>
@@ -150,7 +147,7 @@
       </div>
       <div class="box">
         <div class="icon"><i class="icon-fl-freedom"></i></div>
-        <h3 translate="LANDING_PAGE_TOTAL_FREEDOM" class="ng-scope">Total<br>freedom.</h3>
+        <h3 translate="LANDING_PAGE_TOTAL_FREEDOM" class="ng-scope">Totale<br>Freiheit Für dich.</h3>
         <p translate="LANDING_PAGE_WORKOUTS_EVERYWHERE" class="ng-scope">You exercise with your bodyweight only. Anywhere, anytime: at home, outside, in gyms, in hotel rooms.</p>
         <div onclick="" class="hover">
           <div class="icon"><i class="icon-fl-freedom"></i></div>
@@ -159,7 +156,7 @@
       </div>
       <div class="box">
         <div class="icon"><i class="icon-fl-couple"></i></div>
-        <h3 translate="LANDING_PAGE_COMMUNITY" class="ng-scope">1.000.000+ free athletes.</h3>
+        <h3 translate="LANDING_PAGE_COMMUNITY" class="ng-scope">Vegan und Vegetarisch.</h3>
         <p translate="LANDING_PAGE_CHALLENGE" class="ng-scope">Stay in touch with the Freeletics community around the globe. Share your results and compete with your friends.</p>
         <div onclick="" class="hover">
           <div class="icon"><i class="icon-fl-couple"></i></div>
@@ -173,68 +170,50 @@
       <div class="anja-arne">
         <div class="anja">
           <h3>Anja</h3>
-          <p class="ng-binding">Free athlete<br>since May '12</p>
+          <p class="ng-binding">Seit Mai '12<br>fettfrei</p>
         </div>
         <div class="arne">
           <h3>Arne</h3>
-          <p class="ng-binding">Free athlete<br>since February '12</p>
+          <p class="ng-binding">Seit Februar '12<br>fettfrei</p>
         </div>
       </div>
       <div class="watch">
-        <h3 translate="LANDING_PAGE_FREE_ATHLETE_ROLE_MODELS" class="ng-scope">Freeletics<br>Role models</h3>
-        <button fl-smooth-scroll-to=".real-you" href="" class="blue"><i class="fa fa-angle-down"></i><span class="ng-binding">Watch their stories</span></button>
+        <h3 translate="LANDING_PAGE_FREE_ATHLETE_ROLE_MODELS" class="ng-scope">Live Fatless<br>Athleten</h3>
+        <button fl-smooth-scroll-to=".real-you" href="" class="blue"><i class="fa fa-angle-down"></i><span class="ng-binding">Sehe ihre Geschichten</span></button>
       </div>
     </div>
   </section>
   <section class="motivating-way container_12">
-    <h2 class="ng-binding">The Freeletics core values.</h2>
+    <h2 class="ng-binding">Die Live Fatless Vision.</h2>
     <div class="pictures row">
       <figure class="grid_4 gap_0">
         <div class="image"><img src="./FREELETICS - High Intensity Workouts & Training Plans_files/motivating_1.jpg"></div>
         <figcaption>
-          <h3 class="ng-binding">Tough</h3>
+          <h3 class="ng-binding">Hart</h3>
         </figcaption>
       </figure>
       <figure class="grid_4 gap_0">
         <div class="image"><img src="./FREELETICS - High Intensity Workouts & Training Plans_files/motivating_2.jpg"></div>
         <figcaption>
-          <h3 class="ng-binding">Together</h3>
+          <h3 class="ng-binding">Zusammen</h3>
         </figcaption>
       </figure>
       <figure class="grid_4 gap_0">
         <div class="image"><img src="./FREELETICS - High Intensity Workouts & Training Plans_files/motivating_3.jpg"></div>
         <figcaption>
-          <h3 class="ng-binding">Free</h3>
+          <h3 class="ng-binding">Frei</h3>
         </figcaption>
       </figure>
     </div>
   </section>
   <section class="what-we-offer container_12">
-    <h2 class="ng-binding">Our premium products for maximum progress.</h2>
-    <div class="workout-coach box">
-      <h3 class="ng-binding">Workout Coach</h3>
-      <h4 translate="LANDING_PAGE_TOUGH_WEEKS" class="ng-scope">15 weeks of personalized training instructions.<br>Highly effective. Results guaranteed.</h4>
-      <p translate="LANDING_PAGE_WORKOUT_PLANS" class="ng-scope">Detailled workout plans for each week.<br>Based on the training data of thousands of athletes.<br>Individually adapted to your goals, your level of fitness and your progress.</p>
-      <button ng-controller="SignUpModalCtrl" ng-click="openSignUpModal()" class="blue ng-scope"><i class="fa fa-angle-right"></i><span class="ng-binding">Start now</span></button>
-    </div>
-    <div class="nutrition-guide box">
-      <h3 class="ng-binding">Nutrition guide</h3>
-      <h4 translate="LANDING_PAGE_NUTRITION_TEACHING" class="ng-scope">Step-by-step guidance towards a healthy diet. Double your progress.</h4>
-      <p translate="LANDING_PAGE_NUTRITION_FUNDAMENTALS" class="ng-scope">15 weeks of easy to follow rules.<br>Simple and tasty recipes.<br>No starving, no calorie counting.</p>
-      <button ng-controller="SignUpModalCtrl" ng-click="openSignUpModal()" class="blue ng-scope"><i class="fa fa-angle-right"></i><span class="ng-binding">Start now</span></button>
-    </div>
-    <div class="training-tool box">
-      <h3 translate="LANDING_PAGE_IOS_AND_ANDROID" class="ng-scope">Download the app</h3>
-      <h4 class="ng-binding">Workout everywhere and connect to athletes around the globe.</h4>
-      <p translate="LANDING_PAGE_INSTRUCTIONS" class="ng-scope">Get workout instructions wherever you exercise.<br>Track your progess and share your results.<br>Challenge others and keep in touch with the Freeletics community.</p>
-      <div class="stores"><a href="https://itunes.apple.com/us/app/freeletics-pro-functional/id579309592?mt=8&uo=4" target="itunes_store"><img src="./FREELETICS - High Intensity Workouts & Training Plans_files/app-store.png"></a><a href="https://play.google.com/store/apps/details?id=com.freeletics.pro" target="_blank"><img src="./FREELETICS - High Intensity Workouts & Training Plans_files/google-play.png"></a></div>
-    </div>
+    <h2 class="ng-binding">Unsere Premiumprodukte sind für maximalen Trainingserfolg.</h2>
   </section>
   <section class="real-you">
     <div class="container_12">
       <div class="headline">
-        <h3 translate="LANDING_PAGE_REAL_YOU" class="ng-scope">Motivating. Authentic.<br>Freeletics athlete stories.</h3>
-        <p translate="LANDING_PAGE_FREELETICS_CHANGES_YOU" class="ng-scope">Thousands have already been successful.<br>You are only one step away from your own success story.<br>Start now!</p>
+        <h3 translate="LANDING_PAGE_REAL_YOU" class="ng-scope">Motivierend. Authentisch.<br>Live Fatless Athleten.</h3>
+        <p translate="LANDING_PAGE_FREELETICS_CHANGES_YOU" class="ng-scope">Tausende haben es schon geschafft.<br>Du bist nur einen Schritt entfernt von deiner Erfolgsgeschichte.<br>Starte jetzt!</p>
       </div>
       <ul class="videos">
         <li fl-modal-youtube-player="fl-modal-youtube-player" video-id="vGnAQqlrKoE" class="video-thumbnail ng-isolate-scope"><img src="./FREELETICS - High Intensity Workouts & Training Plans_files/0.jpg" class="ng-scope"></li>
@@ -248,7 +227,7 @@
 <div ng-controller="SignUpCtrl" class="sign-up row ng-scope">
   <div class="grid_6 gap_0 border">
     <div class="sign-up-form">
-      <h3 class="ng-binding">Start your workout</h3>
+      <h3 class="ng-binding">Bestell dein Starterpaket jetzt</h3>
       <ul class="sign-up-benefits-list">
         <li translate="REGISTER_START_TRAINING" class="ng-scope"><b>Free:</b> Workouts to start exercising immediately.</li>
         <li translate="REGISTER_GET_ACCESS" class="ng-scope"><b>Optional:</b> Premium training and nutrition plans for maximum progress, individually adapted to you.</li>
@@ -256,30 +235,28 @@
       <form ng-submit="signUp()" class="ng-pristine ng-valid">
         <ul>
           <li class="first">
-            <input name="user[first_name]" type="text" placeholder="First Name" ng-model="credentials.first_name" class="ng-pristine ng-valid">
+            <input name="user[first_name]" type="text" placeholder="Vorname" ng-model="credentials.first_name" class="ng-pristine ng-valid">
           </li>
           <li class="last">
-            <input name="user[last_name]" type="text" placeholder="Last Name" ng-model="credentials.last_name" class="ng-pristine ng-valid">
+            <input name="user[last_name]" type="text" placeholder="Nachname" ng-model="credentials.last_name" class="ng-pristine ng-valid">
           </li>
           <li>
-            <input name="user[email]" type="email" placeholder="Email Address" ng-model="credentials.email" class="ng-pristine ng-valid ng-valid-email">
+            <input name="user[email]" type="email" placeholder="Email" ng-model="credentials.email" class="ng-pristine ng-valid ng-valid-email">
           </li>
           <li>
-            <input name="user[password]" type="password" placeholder="Password" ng-model="credentials.password" class="ng-pristine ng-valid">
+            <input name="user[password]" type="password" placeholder="Passwort" ng-model="credentials.password" class="ng-pristine ng-valid">
           </li>
         </ul>
-        <button event-spinner="userRegistration" type="submit" analytics-on="click" analytics-event="registration" analytics-category="registration" class="blue ng-binding">Free Sign Up</button>
-        <p class="go-to"><span>Already a user?</span><a href="" ng-controller="SignInModalCtrl" ng-click="openSignInModal()" class="ng-scope">Sign in</a></p>
-        <p translate="REGISTER_LEGAL" class="disclaimer ng-scope">By creating an account, I agree to Freeletics' <a href="https://www.freeletics.com/en/pages/terms">Terms of Service</a> and <a href="https://www.freeletics.com/en/pages/privacy">Privacy Policy</a>.</p>
+        <button event-spinner="userRegistration" type="submit" analytics-on="click" analytics-event="registration" analytics-category="registration" class="blue ng-binding">Jetzt bestellen</button>
       </form>
     </div>
   </div>
   <div class="grid_6 gap_0">
     <div class="sign-up-benefits">
-      <h3 class="ng-binding">After your registration</h3>
+      <h3 class="ng-binding">Nach deiner Bestellung</h3>
       <ul class="sign-up-benefits-list">
-        <li translate="REGISTER_START_TRAINING" class="ng-scope"><b>Free:</b> Workouts to start exercising immediately.</li>
-        <li translate="REGISTER_GET_ACCESS" class="ng-scope"><b>Optional:</b> Premium training and nutrition plans for maximum progress, individually adapted to you.</li>
+        <li translate="REGISTER_START_TRAINING" class="ng-scope"><b>Einnahmehinweise:</b> Du bekommst eine genaue Anleitung, wie du deinen Trainingserfolg mit unserem Drink optimieren kannst.</li>
+        <li translate="REGISTER_GET_ACCESS" class="ng-scope"><b>Optional:</b> Premium Trainings- und Ernährungspläne für maximalen Erfolg, individuell auf dich angepasst.</li>
       </ul>
     </div>
   </div>
@@ -290,52 +267,7 @@
       <div class="l-overlay" ng-click="$root.isMobileNavMenuVisible = false"></div>
 
       <!-- ngInclude: '/views/partials/_footer/footer.html' --><footer class="l-footer ng-scope" ng-include="&#39;/views/partials/_footer/footer.html&#39;">
-<section class="footer container_12 ng-scope">
-  <div class="grid_2 no-margin-left">
-    <h4 class="ng-binding">About</h4>
-    <ul>
-      <li><a ng-href="/en/pages/workout_coach" class="ng-binding" href="https://www.freeletics.com/en/pages/workout_coach">Workout Coach</a></li>
-      <li><a ng-href="/en/pages/nutrition_guide" class="ng-binding" href="https://www.freeletics.com/en/pages/nutrition_guide">Nutrition Guide</a></li>
-      <li><a ng-href="/en/pages/fundamentals" class="ng-binding" href="https://www.freeletics.com/en/pages/fundamentals">Fundamentals</a></li>
-    </ul>
-  </div>
-  <div class="grid_2">
-    <h4 class="ng-binding">Support</h4>
-    <ul>
-      <li><a href="http://support.freeletics.com/" target="_blank" class="ng-binding">FAQ</a></li>
-      <li><a href="http://knowledge.freeletics.com/" target="_blank" class="ng-binding">Knowledge</a></li>
-    </ul>
-  </div>
-  <div class="grid_2">
-    <h4 class="ng-binding">Company</h4>
-    <ul>
-      <li><a ng-href="/en/pages/jobs" class="ng-binding" href="https://www.freeletics.com/en/pages/jobs">Jobs</a></li>
-      <li><a href="http://www.press-service.info/freeletics/" target="_blank" class="ng-binding">Press</a></li>
-    </ul>
-  </div>
-  <div class="grid_2">
-    <h4 class="ng-binding">Legal</h4>
-    <ul>
-      <li><a ng-href="/en/pages/terms" class="ng-binding" href="https://www.freeletics.com/en/pages/terms">Terms</a></li>
-      <li><a ng-href="/en/pages/privacy" class="ng-binding" href="https://www.freeletics.com/en/pages/privacy">Privacy</a></li>
-      <li><a ng-href="/en/pages/imprint" class="ng-binding" href="https://www.freeletics.com/en/pages/imprint">Imprint</a></li>
-    </ul>
-  </div>
-  <div class="grid_2">
-    <h4 class="ng-binding">Connect</h4>
-    <ul>
-      <li><a href="https://www.facebook.com/Freeletics" target="_blank">Facebook</a></li>
-      <li><a href="https://twitter.com/Freeletics" target="_blank">Twitter</a></li>
-      <li><a href="http://instagram.com/freeletics" target="_blank">Instagram</a></li>
-    </ul>
-  </div>
-  <div class="grid_2 no-margin-right">
-    <div class="freeletics"><a ng-href="/en" class="freeletics-logo" href="./FREELETICS - High Intensity Workouts & Training Plans_files/FREELETICS - High Intensity Workouts & Training Plans.html"><span>Freeletics</span></a>
-      <p translate="FOOTER_COPYRIGHT" class="copyright ng-scope">© 2014 Freeletics GmbH</p>
-      <div data-href="https://www.facebook.com/Freeletics" data-width="0px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" class="fb-like"></div>
-    </div>
-  </div>
-</section></footer>
+</footer>
 
       <script src="./FREELETICS - High Intensity Workouts & Training Plans_files/37c32517.vendor.js"></script>
 
